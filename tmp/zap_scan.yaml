@@ -23,7 +23,8 @@ env:
 jobs:
 - type: passiveScan-config
   parameters: {}
-- type: import
+- name: import HAR File
+  type: import
   parameters:
     type: har
     fileName: /zap/wrk/tmp/AwesomeToDo.har
